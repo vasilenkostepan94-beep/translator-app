@@ -18,9 +18,9 @@ jobs:
         java-version: '17'
 
     - name: Build with Buildozer
-      uses: ArtemSBulgakov/buildozer-action@v1
+      uses: kivy/buildozer-action@master
       with:
-        command: buildozer android debug
+        filename: buildozer.spec
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
